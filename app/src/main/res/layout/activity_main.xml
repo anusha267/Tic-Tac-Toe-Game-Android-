@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="390dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="05dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/board"
+        app:alignmentMode="alignMargins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:adjustViewBounds="false"
+            android:alpha="0"
+            android:cropToPadding="false"
+            android:onClick="click"
+            android:scaleType="fitCenter"
+            android:tag="0"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="133dp"
+            android:layout_height="131dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="1"
+            android:visibility="visible"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="122dp"
+            android:layout_height="134dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="2"
+            android:visibility="visible"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="131dp"
+            android:layout_height="143dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="3"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="4"
+            android:visibility="visible"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="123dp"
+            android:layout_height="138dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="5"
+            android:visibility="visible"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="130dp"
+            android:layout_height="131dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="6"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="132dp"
+            android:layout_height="131dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="7"
+            android:visibility="visible"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="122dp"
+            android:layout_height="127dp"
+            android:alpha="0"
+            android:foregroundGravity="center"
+            android:onClick="click"
+            android:tag="8"
+            android:visibility="visible"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="play"
+        android:text="Play Again?!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
